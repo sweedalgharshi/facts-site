@@ -1,0 +1,25 @@
+/* font-family: 'Coiny', cursive;
+font-family: 'Sono', sans-serif; */
+
+h1 {
+  font-family: 'Coiny', sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.fact {
+  font-family: 'Sono', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.tag {
+  font-family: 'Coiny', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}

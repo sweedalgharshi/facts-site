@@ -16,12 +16,25 @@ body {
 
 .header {
   margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 h1 {
   font-family: 'Coiny', sans-serif;
   font-size: 42px;
   text-transform: uppercase;
+  line-height: 1;
+  margin-top: 6px;
 }
 
 .fact-form {
@@ -41,6 +54,16 @@ ul {
   background-color: #44403c;
   margin-bottom: 16px;
   padding: 16px 24px;
+  letter-spacing: -1px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+}
+
+.vote-btn {
+  margin-left: auto;
 }
 
 .tag {

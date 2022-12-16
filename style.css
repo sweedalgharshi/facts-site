@@ -207,3 +207,61 @@ ul {
   width: 100%;
   background-image: none;
 }
+
+/* Mobile Responsive Design */
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+}
+
+/* .fact-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 40px;
+  border-radius: 16px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.fact-form input,
+.fact-form select {
+  width: 220px;
+  background-color: #78716c;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  font-family: inherit;
+  color: inherit;
+} 
+*/
+
+@media (max-width: 1024px) {
+  body {
+    padding: 32px 48px;
+  }
+
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

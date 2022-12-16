@@ -58,7 +58,40 @@ h1 {
   background-color: #44403c;
   margin-bottom: 40px;
   padding: 16px 40px;
-  text-align: center;
+  border-radius: 16px;
+  /* text-align: center; */
+
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 16px;
+}
+
+.fact-form input,
+.fact-form select {
+  width: 220px;
+  background-color: #78716c;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  font-family: inherit;
+  color: inherit;
+}
+
+.fact-form input::placeholder {
+  color: #a8a29e;
+}
+
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+
+.fact-form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
 }
 
 ul {
@@ -80,6 +113,7 @@ ul {
   margin-bottom: 16px;
   padding: 16px 24px;
   letter-spacing: -1px;
+  border-radius: 16px;
 
   display: flex;
   align-items: center;

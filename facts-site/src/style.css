@@ -10,7 +10,7 @@ font-family: 'Sono', sans-serif; */
 body {
   background-color: #292524;
   color: #fafaf9;
-  font-family: 'Sono', sans-serif;
+  font-family: "Sono", sans-serif;
   padding: 48px 64px;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 h1 {
-  font-family: 'Coiny', sans-serif;
+  font-family: "Coiny", sans-serif;
   font-size: 42px;
   text-transform: uppercase;
   line-height: 1;
@@ -106,7 +106,7 @@ ul {
 
 .main {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 250px 1fr !important;
   gap: 48px;
 }
 
@@ -167,7 +167,7 @@ ul {
 }
 
 .tag {
-  font-family: 'Coiny', sans-serif;
+  font-family: "Coiny", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   padding-top: 3px;
@@ -180,7 +180,7 @@ ul {
 /* Button Styling */
 .btn {
   border: none;
-  font-family: 'Coiny', sans-serif;
+  font-family: "Coiny", sans-serif;
   line-height: 1;
   text-transform: uppercase;
   font-size: 17px;

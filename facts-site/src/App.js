@@ -55,19 +55,7 @@ const App = () => {
   return (
     <div>
       {/* Header Section */}
-      <header className="header">
-        <div className="logo">
-          <img src="logo.png" alt="logo" />
-          <h1>Facts Sites!</h1>
-        </div>
-        <button
-          className="btn btn-large btn-open"
-          // 3. update state variable
-          onClick={() => setShowForm((prevState) => !prevState)}
-        >
-          Share a fact
-        </button>
-      </header>
+      <Header setShowForm={setShowForm} showForm={showForm} />
 
       {/* 2. Use state variable*/}
       {showForm ? <NewFactForm /> : null}
@@ -79,6 +67,24 @@ const App = () => {
     </div>
   );
 };
+
+function Header({ showForm, setShowForm }) {
+  return (
+    <header className="header">
+      <div className="logo">
+        <img src="logo.png" alt="logo" />
+        <h1>Facts Sites!</h1>
+      </div>
+      <button
+        className="btn btn-large btn-open"
+        // 3. update state variable
+        onClick={() => setShowForm((prevState) => !prevState)}
+      >
+        {showForm ? "Close" : "Share a fact"}
+      </button>
+    </header>
+  );
+}
 
 function NewFactForm() {
   return <form className="fact-form">Fact Form</form>;

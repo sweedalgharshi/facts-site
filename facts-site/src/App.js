@@ -35,6 +35,7 @@ const initialFacts = [
   },
 ];
 
+// eslint-disable-next-line no-unused-vars
 function Counter() {
   const [count, setCount] = useState(0);
 
@@ -49,6 +50,8 @@ function Counter() {
 }
 
 const App = () => {
+  // 1. define state variable
+  const [showForm, setShowForm] = useState(false);
   return (
     <div>
       {/* Header Section */}
@@ -57,11 +60,17 @@ const App = () => {
           <img src="logo.png" alt="logo" />
           <h1>Facts Sites!</h1>
         </div>
-        <button className="btn btn-large btn-open">Share a fact</button>
+        <button
+          className="btn btn-large btn-open"
+          // 3. update state variable
+          onClick={() => setShowForm((prevState) => !prevState)}
+        >
+          Share a fact
+        </button>
       </header>
 
-      <Counter />
-      <NewFactForm />
+      {/* 2. Use state variable*/}
+      {showForm ? <NewFactForm /> : null}
 
       <main className="main">
         <CategoryFilters />

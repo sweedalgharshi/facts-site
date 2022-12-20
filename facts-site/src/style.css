@@ -19,7 +19,7 @@ body {
 }
 
 /* Container Section */
-.container {
+#root {
   max-width: 1500px;
   margin: 0 auto;
 }
